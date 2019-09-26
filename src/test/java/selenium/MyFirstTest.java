@@ -26,12 +26,16 @@ public class MyFirstTest {
 
     @Test
     public  void myFirstTest() {
-        driver.get("https://www.google.com/");
-//        WebElement searchField = driver.findElement(By.name("q"));
-//        searchField.sendKeys("webdriver");
-//        searchField.sendKeys(Keys.ENTER);
-      //  driver.findElement(By.name("btnG")).click();
-      //  wait.until(titleIs("webdriver - поиск в Google"));
+        driver.get("http://localhost/litecart/admin/");
+        WebElement login_fld = driver.findElement(By.name("username"));
+        login_fld.sendKeys("admin");
+
+        WebElement password_fld = driver.findElement(By.name("password"));
+        password_fld.sendKeys("admin");
+    //    searchField.sendKeys(Keys.ENTER);
+
+        driver.findElement(By.name("login")).click();
+  //      wait.until(titleIs("webdriver - поиск в Google"));
     }
 
     @After
