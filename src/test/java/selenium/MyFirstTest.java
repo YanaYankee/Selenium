@@ -1,46 +1,38 @@
 package selenium;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class MyFirstTest {
+public class MyFirstTest extends TestBase {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
 
-    @Before
-    public void start() {
-        System.setProperty("webdriver.chrome.driver","TOOLS/chromedriver");
-        driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 10);
+    @Test
+    public void test1() {
+        driver.navigate().to("http://www.google.com");
+        WebElement searchField = driver.findElement(By.name("q"));
+        searchField.sendKeys("webdriver");
+        searchField.sendKeys(Keys.ENTER);
+        wait.until(titleIs("webdriver - Пошук Google"));
     }
 
     @Test
-    public  void myFirstTest() {
-        driver.get("http://localhost/litecart/admin/");
-        WebElement login_fld = driver.findElement(By.name("username"));
-        login_fld.sendKeys("admin");
-
-        WebElement password_fld = driver.findElement(By.name("password"));
-        password_fld.sendKeys("admin");
-    //    searchField.sendKeys(Keys.ENTER);
-
-        driver.findElement(By.name("login")).click();
-  //      wait.until(titleIs("webdriver - поиск в Google"));
+    public void test3() {
+        driver.navigate().to("http://www.google.com");
+        WebElement searchField = driver.findElement(By.name("q"));
+        searchField.sendKeys("webdriver");
+        searchField.sendKeys(Keys.ENTER);
+        wait.until(titleIs("webdriver - Пошук Google"));
     }
-
-    @After
-    public void stop() {
-        driver.quit();
-        driver = null;
+    @Test
+    public void test4() {
+        driver.navigate().to("http://www.google.com");
+        WebElement searchField = driver.findElement(By.name("q"));
+        searchField.sendKeys("webdriver");
+        searchField.sendKeys(Keys.ENTER);
+        wait.until(titleIs("webdriver - Пошук Google"));
     }
 }
