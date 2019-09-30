@@ -38,6 +38,8 @@ public class LoginTest extends TestBase {
 
                     if (number_of_stickers < 1) {
                         throw new AssertionError("No stickers were found on the product");
+                    } else if (number_of_stickers > 1){
+                        throw new AssertionError("Too many stickers were found on the product");
                     }
                 }
             }
