@@ -8,6 +8,49 @@ import java.util.List;
 
 public class LoginTest extends TestBase {
 
+
+    //  ************************** Task 8 test  **************************
+//  1. Check if all products on home page has badges (sale or new)
+//  2. Check that each product has one badge
+
+    @Test
+    public void testCheckProductBadgesOnHomePage() {
+
+        this.initPage("http://localhost/litecart/");
+
+        List<WebElement> products_sections_list = driver.findElements(
+                By.cssSelector("div.middle>div.content div.box"));
+        System.out.println(products_sections_list);
+
+        for(WebElement product_list : products_sections_list) {
+           String id = product_list.getAttribute("id");
+            System.out.println(id);
+
+            List<WebElement> products_list = driver.findElements(
+                    By.cssSelector("div#" + id + " div.content ul.products li.product"));
+            System.out.println(products_list);
+
+            int number_of_products = products_list.size();
+            if (number_of_products > 0) {
+                for(WebElement product : products_list){
+                    int number_of_stickers = product.findElements(By.className("sticker")).size();
+                    System.out.println("Number of stickers: " +  number_of_stickers);
+
+                    if (number_of_stickers < 1) {
+                        throw new AssertionError("No stickers were found on the product");
+                    }
+                }
+            }
+        }
+    }
+
+    public void initPage(String url) {
+        driver.get(url);
+        System.out.println(url + " is inited");
+    }
+
+
+
 //  ************************** Task 7 test  **************************
 //  1. log in to admin
 //  2. click all the elements in the left menu including sub-elements
@@ -18,13 +61,24 @@ public class LoginTest extends TestBase {
         this.logInToAdmin("admin", "admin");
         this.elementsToClick();
     }
+    //****************** For older versions **********************
+    // .executeScript("return $('div:contains(Latest)').get()");
+
+//****************** For newer versions **********************
+    // .executeScript("return $$('div:contains(Latest)')");
 
 
+
+//    List<WebElement> products_list = (List<WebElement>) ((JavascriptExecutor) driver)
+//            //   .executeScript("return document.querySelectorAll('div ul.products')");
+//            .executeScript("return document.querySelectorAll('div ul.products li')");
+//        System.out.println(products_list_number);
+//        System.out.println(products_with_badges_list_number);
 //  ************************** Log In method **************************
 
     public void logInToAdmin(String username, String password) {
-        driver.get("http://localhost/litecart/admin/");
-              //  System.out.println("admin/ is opened");
+        this.initPage("http://localhost/litecart/admin/");
+
         driver.findElement(By.name("username")).sendKeys(username);
              //   System.out.println("keys to username sent");
         driver.findElement(By.name("password")).sendKeys(password);
@@ -34,11 +88,14 @@ public class LoginTest extends TestBase {
     }
 
 //  *************** Get elements to click method (menu elements and subelements **************************
+    public int getNumberOfElements(By by) {
+        int elements = driver.findElements(by).size();
+        System.out.println("Number of elements: " + elements);
+        return elements;
+    }
 
     public void elementsToClick() {
-        int number_of_elements_elements = driver.findElements(
-                By.cssSelector("ul#box-apps-menu li")).size();
-//        System.out.println("Number of elements: " + number_of_elements_elements);
+        int number_of_elements_elements = this.getNumberOfElements(By.cssSelector("ul#box-apps-menu li"));
 
         Boolean all_menu_elements_clicked = false;
         int i = 1;
@@ -56,9 +113,8 @@ public class LoginTest extends TestBase {
                         By.cssSelector("td#content h1"),
                         "h1 element is not present on the page" + link,
                         "Page: "+ link + ", title h1 element");
-                int elements_of_nth_elements = driver.findElements(
-                        By.cssSelector("ul#box-apps-menu li.selected:nth-child(" + i + ") ul:nth-child(2) li")).size();
-                //System.out.println(link + " menu has " + elements_of_nth_elements + " subchildren");
+                int elements_of_nth_elements = getNumberOfElements(
+                        By.cssSelector("ul#box-apps-menu li.selected:nth-child(" + i + ") ul:nth-child(2) li"));
 
                 if (elements_of_nth_elements > 0) {
                     Boolean all_subchildren_clicked = false;
@@ -111,4 +167,5 @@ public class LoginTest extends TestBase {
             System.out.println( element + " is present on the page");
         }
     }
+
 }
