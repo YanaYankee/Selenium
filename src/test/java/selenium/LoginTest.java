@@ -1,5 +1,6 @@
 package selenium;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -36,11 +37,8 @@ public class LoginTest extends TestBase {
                     int number_of_stickers = product.findElements(By.className("sticker")).size();
                     System.out.println("Number of stickers: " +  number_of_stickers);
 
-                    if (number_of_stickers < 1) {
-                        throw new AssertionError("No stickers were found on the product");
-                    } else if (number_of_stickers > 1){
-                        throw new AssertionError("Too many stickers were found on the product");
-                    }
+                    Assert.assertEquals(1, number_of_stickers);
+
                 }
             }
         }
