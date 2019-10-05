@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5898825c-bbc1-4722-b52d-d01e62cb2c70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -48,10 +48,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="63" />
+            <state relative-caret-position="37">
+              <caret line="184" column="52" lean-forward="true" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,10 +60,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="261">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="26" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,13 +82,35 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>done</find>
-      <find>assertElementPresent</find>
       <find>getNumberOfElementsToClick</find>
       <find>List</find>
       <find>getNumberOfElements</find>
       <find>void</find>
+      <find>home</find>
+      <find>int</find>
+      <find>int</find>
+      <find>home_discount_int</find>
+      <find>home_price_text_decor</find>
+      <find>prod_price_text_decor</find>
+      <find>home_price_text_color</find>
+      <find>prod_price_text_color</find>
+      <find>home_font_weight</find>
+      <find>prod_font_weight</find>
+      <find>home_discount_color</find>
+      <find>prod_discount_color</find>
+      <find>home_disc_fs_float</find>
+      <find>home_price_fs_float</find>
+      <find>prod_discount_fs_float</find>
+      <find>prod_price_fs_float</find>
+      <find>prod_discount_text</find>
+      <find>home_discount_text</find>
       <find>Assert</find>
+      <find>getElement_home</find>
+      <find>home_price</find>
+      <find>home_discount</find>
+      <find>prod_title</find>
+      <find>prod_price</find>
+      <find>prod_discount</find>
       <find>logInToAdmin</find>
     </findStrings>
   </component>
@@ -106,17 +128,18 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/loginPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/MainPageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/LoginPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="145" />
-    <option name="y" value="41" />
-    <option name="width" value="1224" />
+    <option name="x" value="40" />
+    <option name="y" value="40" />
+    <option name="width" value="1041" />
     <option name="height" value="814" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -214,8 +237,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CountriesTest.testCheckIfZonesInAlphabet">
-    <configuration name="CountriesTest.testCheckCountriesElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductPageTest.testDiscPriceFontGreaterOnProd">
+    <configuration name="ProductPageTest.testDiscPriceBoldProd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstTests.test" />
       <extension name="coverage">
         <pattern>
@@ -224,14 +247,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.CountriesTest" />
-      <option name="METHOD_NAME" value="testCheckCountriesElements" />
+      <option name="MAIN_CLASS_NAME" value="selenium.ProductPageTest" />
+      <option name="METHOD_NAME" value="testDiscPriceBoldProd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountriesTest.testCheckIfZonesInAlphabet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductPageTest.testDiscPriceFontGreaterOnHome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstTests.test" />
       <extension name="coverage">
         <pattern>
@@ -240,14 +263,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.CountriesTest" />
-      <option name="METHOD_NAME" value="testCheckIfZonesInAlphabet" />
+      <option name="MAIN_CLASS_NAME" value="selenium.ProductPageTest" />
+      <option name="METHOD_NAME" value="testDiscPriceFontGreaterOnHome" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountriesTest.testCheckProductBadgesOnHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductPageTest.testDiscPriceFontGreaterOnProd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstTests.test" />
       <extension name="coverage">
         <pattern>
@@ -256,14 +279,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.CountriesTest" />
-      <option name="METHOD_NAME" value="testCheckProductBadgesOnHomePage" />
+      <option name="MAIN_CLASS_NAME" value="selenium.ProductPageTest" />
+      <option name="METHOD_NAME" value="testDiscPriceFontGreaterOnProd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testCheckBadgesOnHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductPageTest.testDiscPriceRedHome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstTests.test" />
       <extension name="coverage">
         <pattern>
@@ -272,14 +295,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.LoginTest" />
-      <option name="METHOD_NAME" value="testCheckBadgesOnHomePage" />
+      <option name="MAIN_CLASS_NAME" value="selenium.ProductPageTest" />
+      <option name="METHOD_NAME" value="testDiscPriceRedHome" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testCheckProductBadgesOnHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductPageTest.testDiscPriceRedProd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstTests.test" />
       <extension name="coverage">
         <pattern>
@@ -288,8 +311,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.LoginTest" />
-      <option name="METHOD_NAME" value="testCheckProductBadgesOnHomePage" />
+      <option name="MAIN_CLASS_NAME" value="selenium.ProductPageTest" />
+      <option name="METHOD_NAME" value="testDiscPriceRedProd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -297,11 +320,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CountriesTest.testCheckIfZonesInAlphabet" />
-        <item itemvalue="JUnit.CountriesTest.testCheckCountriesElements" />
-        <item itemvalue="JUnit.CountriesTest.testCheckProductBadgesOnHomePage" />
-        <item itemvalue="JUnit.LoginTest.testCheckProductBadgesOnHomePage" />
-        <item itemvalue="JUnit.LoginTest.testCheckBadgesOnHomePage" />
+        <item itemvalue="JUnit.ProductPageTest.testDiscPriceFontGreaterOnProd" />
+        <item itemvalue="JUnit.ProductPageTest.testDiscPriceFontGreaterOnHome" />
+        <item itemvalue="JUnit.ProductPageTest.testDiscPriceRedProd" />
+        <item itemvalue="JUnit.ProductPageTest.testDiscPriceRedHome" />
+        <item itemvalue="JUnit.ProductPageTest.testDiscPriceBoldProd" />
       </list>
     </recent_temporary>
   </component>
@@ -319,42 +342,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CountriesTest_testCheckCountriesElements - 2019.10.04 at 20h 22m 45s.xml">
-      <configuration name="CountriesTest.testCheckCountriesElements" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testRegPriceDecorOnProd - 2019.10.05 at 13h 16m 23s.xml">
+      <configuration name="ProductPageTest.testRegPriceDecorOnProd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckCountriesElements - 2019.10.04 at 20h 26m 11s.xml">
-      <configuration name="CountriesTest.testCheckCountriesElements" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testRegPriceGreyHome - 2019.10.05 at 13h 16m 32s.xml">
+      <configuration name="ProductPageTest.testRegPriceGreyHome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckCountriesElements - 2019.10.04 at 20h 28m 44s.xml">
-      <configuration name="CountriesTest.testCheckCountriesElements" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testRegPriceGreyProd - 2019.10.05 at 13h 16m 41s.xml">
+      <configuration name="ProductPageTest.testRegPriceGreyProd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckCountriesElements - 2019.10.04 at 20h 30m 38s.xml">
-      <configuration name="CountriesTest.testCheckCountriesElements" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testDiscPriceBoldHome - 2019.10.05 at 13h 16m 54s.xml">
+      <configuration name="ProductPageTest.testDiscPriceBoldHome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckCountriesElements - 2019.10.04 at 20h 43m 58s.xml">
-      <configuration name="CountriesTest.testCheckCountriesElements" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testDiscPriceBoldHome - 2019.10.05 at 13h 19m 21s.xml">
+      <configuration name="ProductPageTest.testDiscPriceBoldHome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckIfZonesInAlphabet - 2019.10.04 at 21h 03m 03s.xml">
-      <configuration name="CountriesTest.testCheckIfZonesInAlphabet" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testDiscPriceBoldProd - 2019.10.05 at 13h 20m 00s.xml">
+      <configuration name="ProductPageTest.testDiscPriceBoldProd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckIfZonesInAlphabet - 2019.10.04 at 21h 03m 34s.xml">
-      <configuration name="CountriesTest.testCheckIfZonesInAlphabet" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testDiscPriceRedHome - 2019.10.05 at 13h 20m 18s.xml">
+      <configuration name="ProductPageTest.testDiscPriceRedHome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckIfZonesInAlphabet - 2019.10.04 at 21h 04m 12s.xml">
-      <configuration name="CountriesTest.testCheckIfZonesInAlphabet" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testDiscPriceRedProd - 2019.10.05 at 13h 20m 31s.xml">
+      <configuration name="ProductPageTest.testDiscPriceRedProd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckIfZonesInAlphabet - 2019.10.04 at 21h 06m 33s.xml">
-      <configuration name="CountriesTest.testCheckIfZonesInAlphabet" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testDiscPriceFontGreaterOnHome - 2019.10.05 at 13h 20m 41s.xml">
+      <configuration name="ProductPageTest.testDiscPriceFontGreaterOnHome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CountriesTest_testCheckIfZonesInAlphabet - 2019.10.04 at 21h 08m 30s.xml">
-      <configuration name="CountriesTest.testCheckIfZonesInAlphabet" configurationId="JUnit" />
+    <history-entry file="ProductPageTest_testDiscPriceFontGreaterOnProd - 2019.10.05 at 13h 20m 54s.xml">
+      <configuration name="ProductPageTest.testDiscPriceFontGreaterOnProd" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="145" y="41" width="1224" height="814" extended-state="0" />
+    <frame x="40" y="40" width="1041" height="814" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14128596" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2992993" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -363,7 +386,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.27700832" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.17036012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,10 +404,13 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5009276" side_tool="true" weight="0.16516761" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.5009276" side_tool="true" weight="0.16497461" />
     </layout>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/firstTests$ProductPageTest_testCheckIfTitlesAreEqual.ic" NAME="ProductPageTest.testCheckIfTitlesAreEqual Coverage Results" MODIFIED="1570253326706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>selenium.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/firstTests$LoginTest_testLoginAndGoThroughMenu.ic" NAME="LoginTest.testLoginAndGoThroughMenu Coverage Results" MODIFIED="1569742898148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>selenium.*</FILTER>
     </SUITE>
@@ -433,13 +459,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pageObjects/MainPageObject.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/MyMyFirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -454,26 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/MyFirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pageObjects/LoginPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -484,10 +483,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/MyFirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/MyMyFirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="63" />
+        <state relative-caret-position="488">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -496,8 +512,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="159">
+          <caret line="84" column="9" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="84" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="184" column="52" lean-forward="true" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="26" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
