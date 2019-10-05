@@ -20,7 +20,7 @@ public class TestBase {
             wait = new WebDriverWait(driver, 10);
             return;
         }
-        
+
         System.setProperty("webdriver.chrome.driver","TOOLS/chromedriver");
         driver = new ChromeDriver();
 
