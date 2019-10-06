@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5898825c-bbc1-4722-b52d-d01e62cb2c70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" afterDir="false" />
-    </list>
+    <list default="true" id="5898825c-bbc1-4722-b52d-d01e62cb2c70" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -48,13 +46,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="184" column="52" lean-forward="true" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
+            <state relative-caret-position="550">
+              <caret line="164" column="28" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -71,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="994">
-              <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+            <state relative-caret-position="177">
+              <caret line="64" column="47" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,11 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getNumberOfElementsToClick</find>
-      <find>List</find>
-      <find>getNumberOfElements</find>
-      <find>void</find>
-      <find>home</find>
       <find>int</find>
       <find>int</find>
       <find>home_discount_int</find>
@@ -124,6 +138,11 @@
       <find>prod_price</find>
       <find>prod_discount</find>
       <find>logInToAdmin</find>
+      <find>7</find>
+      <find>KEY</find>
+      <find>enter</find>
+      <find>findElementAndSendKeysPad</find>
+      <find>assert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" />
       </list>
     </option>
   </component>
@@ -196,20 +216,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="firstTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firstTests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="pageObjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="firstTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="firstTests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="TOOLS" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -231,6 +237,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.gradle.running" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="selenium" />
     </key>
@@ -250,7 +259,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreateAccountTest.testLoginAndGoThroughMenu">
+  <component name="RunManager" selected="JUnit.AddProductTest.testLoginAndGoThroughMenu">
+    <configuration name="AddProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstTests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.AddProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddProductTest.testLoginAndGoThroughMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstTests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.AddProductTest" />
+      <option name="METHOD_NAME" value="testLoginAndGoThroughMenu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstTests.test" />
       <extension name="coverage">
@@ -299,45 +339,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductPageTest.testDiscPriceRedHome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="firstTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.ProductPageTest" />
-      <option name="METHOD_NAME" value="testDiscPriceRedHome" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductPageTest.testDiscPriceRedProd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="firstTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.ProductPageTest" />
-      <option name="METHOD_NAME" value="testDiscPriceRedProd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddProductTest.testLoginAndGoThroughMenu" />
+        <item itemvalue="JUnit.AddProductTest" />
         <item itemvalue="JUnit.CreateAccountTest.testLoginAndGoThroughMenu" />
         <item itemvalue="JUnit.ProductPageTest.testDiscPriceFontGreaterOnProd" />
         <item itemvalue="JUnit.ProductPageTest.testDiscPriceFontGreaterOnHome" />
-        <item itemvalue="JUnit.ProductPageTest.testDiscPriceRedProd" />
-        <item itemvalue="JUnit.ProductPageTest.testDiscPriceRedHome" />
       </list>
     </recent_temporary>
   </component>
@@ -355,24 +363,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 16h 57m 44s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 16h 59m 05s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 00m 05s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 01m 38s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 03m 33s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 04m 15s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 06m 37s.xml">
       <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
     </history-entry>
@@ -384,6 +374,24 @@
     </history-entry>
     <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 11m 18s.xml">
       <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 27m 34s.xml">
+      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddProductTest_testLoginAndGoThroughMenu - 2019.10.06 at 14h 39m 27s.xml">
+      <configuration name="AddProductTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddProductTest - 2019.10.06 at 16h 06m 04s.xml">
+      <configuration name="AddProductTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddProductTest_testLoginAndGoThroughMenu - 2019.10.06 at 16h 07m 24s.xml">
+      <configuration name="AddProductTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddProductTest_testLoginAndGoThroughMenu - 2019.10.06 at 16h 11m 04s.xml">
+      <configuration name="AddProductTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddProductTest_testLoginAndGoThroughMenu - 2019.10.06 at 16h 14m 00s.xml">
+      <configuration name="AddProductTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -399,7 +407,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.45567867" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.1800554" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -513,30 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="84" column="9" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="84" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="184" column="52" lean-forward="true" selection-start-line="184" selection-start-column="52" selection-end-line="184" selection-end-column="52" />
+        <state relative-caret-position="-35">
+          <caret line="210" column="72" selection-start-line="210" selection-start-column="72" selection-end-line="210" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -555,11 +543,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="994">
-          <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+        <state relative-caret-position="177">
+          <caret line="64" column="47" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="164" column="28" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
