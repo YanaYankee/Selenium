@@ -154,13 +154,13 @@ public class AddProductTest extends TestBase {
         File file = new File(imgDirectory + "/1-yellow-duck-777.png");
         System.out.println(imgDirectory + "/1-yellow-duck-777.png");
 
-        WebElement fileBrowser = driver.findElement(By.xpath("//input[@type='file']"));
-        fileBrowser.click();
+//        WebElement fileBrowser = driver.findElement(By.xpath("//input[@type='file']"));
+//        fileBrowser.click();
         String path = file.getAbsolutePath();
         driver.findElement(By.xpath("//input[@type='file']")).sendKeys(path);
 
-        Actions action = new Actions(driver);
-        action.sendKeys(Keys.ESCAPE).perform();
+//        Actions action = new Actions(driver);
+//        action.sendKeys(Keys.ESCAPE).perform();
 
     }
 
