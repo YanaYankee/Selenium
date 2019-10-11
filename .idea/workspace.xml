@@ -4,6 +4,10 @@
     <list default="true" id="5898825c-bbc1-4722-b52d-d01e62cb2c70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,8 +55,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CartTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Helpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,20 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="52" column="86" lean-forward="true" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+            <state relative-caret-position="244">
+              <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,8 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>int</find>
-      <find>int</find>
       <find>home_discount_int</find>
       <find>home_price_text_decor</find>
       <find>prod_price_text_decor</find>
@@ -125,6 +151,8 @@
       <find>enter</find>
       <find>findElementAndSendKeysPad</find>
       <find>assert</find>
+      <find>fileBrowser.click();</find>
+      <find>elementsToClick</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,20 +170,21 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/loginPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/MainPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/LoginPageObject.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="40" />
-    <option name="width" value="1199" />
-    <option name="height" value="814" />
+    <option name="y" value="66" />
+    <option name="width" value="1249" />
+    <option name="height" value="676" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,7 +231,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,12 +374,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 10m 39s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 11m 18s.xml">
-      <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CreateAccountTest_testLoginAndGoThroughMenu - 2019.10.05 at 17h 27m 34s.xml">
       <configuration name="CreateAccountTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
     </history-entry>
@@ -375,12 +398,18 @@
     <history-entry file="AddProductTest_testLoginAndGoThroughMenu - 2019.10.07 at 09h 56m 57s.xml">
       <configuration name="AddProductTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AddProductTest_testLoginAndGoThroughMenu - 2019.10.07 at 09h 59m 27s.xml">
+      <configuration name="AddProductTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddProductTest_testLoginAndGoThroughMenu - 2019.10.07 at 10h 00m 38s.xml">
+      <configuration name="AddProductTest.testLoginAndGoThroughMenu" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="40" width="1199" height="814" extended-state="0" />
+    <frame x="0" y="66" width="1249" height="676" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26274848" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32808617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,7 +418,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.1800554" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49795586" weight="0.19892474" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -496,27 +525,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/MyMyFirstTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="210" column="72" selection-start-line="210" selection-start-column="72" selection-end-line="210" selection-end-column="72" />
+        <state relative-caret-position="310">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/TestBase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/MyMyFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="896">
+          <caret line="78" column="57" lean-forward="true" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -525,8 +554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="64" column="47" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
+        <state relative-caret-position="360">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -535,8 +564,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="52" column="86" lean-forward="true" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
+        <state relative-caret-position="244">
+          <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -545,18 +584,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CartTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        <state relative-caret-position="234">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

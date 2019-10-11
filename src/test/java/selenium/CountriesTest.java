@@ -15,10 +15,12 @@ public class CountriesTest extends TestBase {
 
     @Test
     public void testCheckCountriesElementsAlphabetOrder() {
+        Helpers helpers = new Helpers();
+
 // Task 1. A - Check if countries are in alphabet
-        this.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
-        this.logInToAdmin("admin", "admin");
-        this.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
+        helpers.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
+        helpers.logInToAdmin("admin", "admin");
+        helpers.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
 
         this.compareListsOfCountries(By.cssSelector("tr.row td:nth-child(5)"), "Countries");
 
@@ -49,10 +51,10 @@ public class CountriesTest extends TestBase {
 // Task 2. Open each country and check if zones are in alphabet
     @Test
     public void testCheckIfZonesInAlphabet() {
-
-        this.initPage("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
-        this.logInToAdmin("admin", "admin");
-        this.initPage("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
+        Helpers helpers = new Helpers();
+        helpers.initPage("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
+        helpers.logInToAdmin("admin", "admin");
+        helpers.initPage("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones");
 
         int i = 1;
         int number_of_countries = driver.findElements(By.cssSelector("table.dataTable tr:not(:last-child):not(:first-child)")).size();
@@ -91,22 +93,6 @@ public class CountriesTest extends TestBase {
 
         Assert.assertEquals(list_of_countries, list_of_countries_copied);
         System.out.println(list + " compared");
-    }
-
-
-    public void initPage(String url) {
-        driver.get(url);
-        System.out.println(url + " is inited");
-    }
-    public void logInToAdmin(String username, String password) {
-        this.initPage("http://localhost/litecart/admin/");
-
-        driver.findElement(By.name("username")).sendKeys(username);
-        //   System.out.println("keys to username sent");
-        driver.findElement(By.name("password")).sendKeys(password);
-        //    System.out.println("keys to username password");
-        driver.findElement(By.name("login")).click();
-        //   System.out.println("login clicked");
     }
 
 }
