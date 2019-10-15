@@ -10,7 +10,49 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentI
 public class CartTest extends Helpers{
     //  ************************** Task 13 test  **************************
 //  Add to cart and remove from cart test
+    @Test
+    public void testAddToCart(){
 
+
+        this.initPage("http://localhost/litecart/");
+
+        this.findElementAndClick(By.cssSelector("li.product"));
+        this.findElementAndClick(By.cssSelector("button[name='add_cart_product']"));
+        wait.until(textToBePresentInElementLocated(By.cssSelector("div#cart span.quantity"),
+                "1"));
+                System.out.println("First product added to cart");
+
+
+        this.findElementAndClick(By.cssSelector("div#logotype-wrapper"));
+        this.findElementAndClick(By.cssSelector("li.product"));
+        this.findElementAndClick(By.cssSelector("button[name='add_cart_product']"));
+        wait.until(textToBePresentInElementLocated(By.cssSelector("div#cart span.quantity"),
+                "2"));
+                System.out.println("Second product added to cart");
+
+        this.findElementAndClick(By.cssSelector("div#logotype-wrapper"));
+        this.findElementAndClick(By.cssSelector("li.product"));
+        this.findElementAndClick(By.cssSelector("button[name='add_cart_product']"));
+        wait.until(textToBePresentInElementLocated(By.cssSelector("div#cart span.quantity"),
+                "3"));
+                System.out.println("Third product added to cart");
+
+        this.findElementAndClick(By.cssSelector("div#cart a.link"));
+
+        this.findElementAndClick(By.cssSelector("button[name='remove_cart_item']"));
+        wait.until(numberOfElementsToBeLessThan(By.cssSelector("table.dataTable tr"), 8));
+                System.out.println("First product is removed from cart");
+
+        this.findElementAndClick(By.cssSelector("button[name='remove_cart_item']"));
+        wait.until(numberOfElementsToBeLessThan(By.cssSelector("table.dataTable tr"), 7));
+        System.out.println("First product is removed from cart");
+
+        this.findElementAndClick(By.cssSelector("button[name='remove_cart_item']"));
+        wait.until(numberOfElementsToBeLessThan(By.cssSelector("table.dataTable tr"), 6));
+        System.out.println("First product is removed from cart");
+
+
+    }
 
 
 
