@@ -7,8 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import static org.junit.Assert.assertTrue;
 
-public class ProductPageTest extends TestBase {
-    Helpers helpers = new Helpers();
+public class ProductPageTest extends Helpers {
 
     //  ************************** Task 9 test  **************************
 // 10. a - Titles are equal on Home and Prod                                (1 test)
@@ -70,7 +69,7 @@ public class ProductPageTest extends TestBase {
     @Test
     public void testRegPriceDecorOnHome() {
                 System.out.println("10. c - Prices are decorated on Home");
-        helpers.initPage("http://localhost/litecart/");
+        this.initPage("http://localhost/litecart/");
         WebElement home_price = getElementOnHome(" div.price-wrapper s.regular-price");
         String home_price_text_decor = home_price.getCssValue("text-decoration-line"); //?
                 System.out.println("Home preg price decor exp. - : line-through, act.: " + home_price_text_decor);
@@ -91,7 +90,7 @@ public class ProductPageTest extends TestBase {
     @Test
     public void testRegPriceGreyHome() {
                 System.out.println("10. c - Prices are grey on Home");
-        helpers.initPage("http://localhost/litecart/");
+        this.initPage("http://localhost/litecart/");
         WebElement home_price = getElementOnHome(" div.price-wrapper s.regular-price");
         String home_price_text_color = home_price.getCssValue("color");
                 System.out.println(home_price_text_color);
@@ -132,7 +131,7 @@ public class ProductPageTest extends TestBase {
     @Test
     public void testDiscPriceBoldHome() {
                 System.out.println("10. d - Discount price bold on Home");
-        helpers.initPage("http://localhost/litecart/");
+        this.initPage("http://localhost/litecart/");
         WebElement home_discount = getElementOnHome(" div.price-wrapper strong.campaign-price");
         String home_font_weight = home_discount.getCssValue("font-weight"); //?
                 System.out.println(home_font_weight);
@@ -158,7 +157,7 @@ public class ProductPageTest extends TestBase {
     @Test
     public void testDiscPriceRedHome() {
                 System.out.println("10. d - Discount price red on Home");
-        helpers.initPage("http://localhost/litecart/");
+        this.initPage("http://localhost/litecart/");
         WebElement home_discount = getElementOnHome(" div.price-wrapper strong.campaign-price");
         String home_discount_color = home_discount.getCssValue("color"); //?
         String g = parseColor(home_discount_color)[1];
@@ -190,7 +189,7 @@ public class ProductPageTest extends TestBase {
     @Test
     public void testDiscPriceFontGreaterOnHome() {
                 System.out.println("10. e - Discount price font size is greater than regular price font size on home page");
-        helpers.initPage("http://localhost/litecart/");
+        this.initPage("http://localhost/litecart/");
         WebElement home_discount = getElementOnHome(" div.price-wrapper strong.campaign-price");
         String home_disc_font_size = home_discount.getCssValue("font-size");
         float home_disc_fs_float = priceOrPxToFloat(home_disc_font_size);
@@ -229,7 +228,7 @@ public class ProductPageTest extends TestBase {
 
     public WebElement initHomeAndGetProd(String selector) {
         String product_path = "div#box-campaigns div.content ul.products li.product:first-child";
-        helpers.initPage("http://localhost/litecart/");
+        this.initPage("http://localhost/litecart/");
         WebElement element = driver.findElement(
                 By.cssSelector(product_path + selector));
         return element;

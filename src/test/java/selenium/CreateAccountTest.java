@@ -9,81 +9,80 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class CreateAccountTest extends TestBase {
+public class CreateAccountTest extends Helpers {
 
 
 //  ************************** Task 11 test  **************************
 //  Create account => logout => login test
-Helpers helpers = new Helpers();
-    String email = "yanina.pavlyk+" + helpers.convertTimeToString() + "@gmail.com";
+    String email = "yanina.pavlyk+" + this.convertTimeToString() + "@gmail.com";
 
     @Test
     public void testLoginAndGoThroughMenu() {
-        helpers.initPage("http://localhost/litecart/en/");
+        this.initPage("http://localhost/litecart/en/");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("footer table tr td.account nav ul li:nth-child(3) a"));
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=firstname]"),
                 "User");
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=lastname]"),
                 "UserSecond");
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=address1]"),
                 "Scofield drive, 35");
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=postcode]"),
                 "44444");
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=city]"),
                 "Huston");
 // Select country
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("span.select2-selection__arrow"));
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input.select2-search__field"),
                 "United States");
-        helpers.findElementAndSendKeysPad(
+        this.findElementAndSendKeysPad(
                 By.cssSelector("input.select2-search__field"),
                 Keys.ENTER);
 
 //        this.findElementAndClick(
 //                By.cssSelector("li#select2-country_code-0h-result-dq7l-US"));
 // Select state
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("select[name=zone_code]"));
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("option[value=TX]"));
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=email]"),
                 email);
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=password]"),
                 "Test1234");
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=phone]"),
                 "+17777777777");
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=confirmed_password]"),
                 "Test1234");
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("button[name=create_account]"));
 // LOGOUT
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#box-account div.content ul li:nth-child(4) a"));
 
 // LOGIN
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=email]"),
                 email);
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[name=password]"),
                 "Test1234");
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("button[name=login]"));
     }
 

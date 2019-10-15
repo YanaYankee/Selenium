@@ -2,14 +2,13 @@ package selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 
 public class Helpers extends TestBase{
 
@@ -28,21 +27,26 @@ public class Helpers extends TestBase{
         System.out.println(url + " is inited");
     }
 
-   Boolean isElementPresent(WebDriver driver, By by) {
-        try {
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            return driver.findElements(by).size() > 0;
-        } finally {
-            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-        }
-
-
-    }
+//   Boolean isElementPresent(WebDriver driver, By by) {
+//        try {
+//            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//            return driver.findElements(by).size() > 0;
+//        } finally {
+//            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+//        }
+//
+//
+//    }
 
 
     public void findElementAndClick(By by) {
         WebElement element = driver.findElement(by);
         element.click();
+    }
+    public String findElementAndGetValue(By by) {
+        WebElement element = driver.findElement(by);
+        String text = element.getAttribute("textContent");
+        return text;
     }
     public void findElementAndSendKeys(By by, String keys) {
         WebElement element = driver.findElement(by);

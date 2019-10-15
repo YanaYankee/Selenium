@@ -9,18 +9,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class CountriesTest extends TestBase {
+public class CountriesTest extends Helpers {
 
     //  ************************** Task 9 test  **************************
 
     @Test
     public void testCheckCountriesElementsAlphabetOrder() {
-        Helpers helpers = new Helpers();
 
 // Task 1. A - Check if countries are in alphabet
-        helpers.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
-        helpers.logInToAdmin("admin", "admin");
-        helpers.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
+        this.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
+        this.logInToAdmin("admin", "admin");
+        this.initPage("http://localhost/litecart/admin/?app=countries&doc=countries");
 
         this.compareListsOfCountries(By.cssSelector("tr.row td:nth-child(5)"), "Countries");
 

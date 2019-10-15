@@ -8,12 +8,12 @@ import org.openqa.selenium.WebElement;
 
 import java.io.File;
 
-public class AddProductTest extends TestBase {
+public class AddProductTest extends Helpers {
 
 //  ************************** Task 12 test  **************************
 //  Add product and check that it was added within admin
-Helpers helpers = new Helpers();
-    public String prod_name = "New Product" + helpers.convertTimeToString();
+
+    public String prod_name = "New Product" + this.convertTimeToString();
     @Test
     public void testLoginAndGoThroughMenu() {
         this.openAdNewProductPage();
@@ -22,7 +22,7 @@ Helpers helpers = new Helpers();
         this.fillOutInformationTabData();
         this.fillOutPricesTabData();
 
-        helpers.findElementAndClick(By.cssSelector("button[name=save]"));
+        this.findElementAndClick(By.cssSelector("button[name=save]"));
         System.out.println("<Save> btn clicked");
 
         this.checkIfProductWasCreated();
@@ -36,11 +36,11 @@ Helpers helpers = new Helpers();
 
     public void openAdNewProductPage() {
 
-        helpers.logInToAdmin("admin", "admin");
-        helpers.findElementAndClick(
+        this.logInToAdmin("admin", "admin");
+        this.findElementAndClick(
                 By.cssSelector("td#sidebar a[href='http://localhost/litecart/admin/?app=catalog&doc=catalog']")
         );
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("a.button[href='http://localhost/litecart/admin/?category_id=0&app=catalog&doc=edit_product']")
         );
         System.out.println("<Add new Product> page opened");
@@ -48,53 +48,53 @@ Helpers helpers = new Helpers();
     }
 
     public void fillOutDataOnGeneralTab(){
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#tab-general td:first-child input[type=radio][value='1']")
         );
             System.out.println("<Status> enabled checked");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-general  input[name='name[en]']"),
                 prod_name
         );
             System.out.println("Keys sent to <Name> input");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-general  input[name='code']"),
-                "np" + helpers.convertTimeToString()
+                "np" + this.convertTimeToString()
         );
             System.out.println("Keys sent to <Code> input");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#tab-general  input[data-name='Root']")
         );
             System.out.println("<Root> deselected on <Categories>");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#tab-general  input[data-name='Rubber Ducks']")
         );
         System.out.println("<Rubber Ducks> selected on <Categories>");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#tab-general  input[name='product_groups[]'][value='1-3']")
         );
             System.out.println("<Unisex> selected on <Product Groups>");
 
-        helpers.findElementAndClearAndSendKeys(
+        this.findElementAndClearAndSendKeys(
                 By.cssSelector("div#tab-general  input[name='quantity']"),
                 "7.00"
         );
             System.out.println("Keys sent to <Quantity> input");
 
-        helpers.findElementAndClearAndSendKeys(
+        this.findElementAndClearAndSendKeys(
                 By.cssSelector("div#tab-general  input[name='date_valid_from']"),
-                helpers.convertTimeToString()
+                this.convertTimeToString()
         );
         System.out.println("Keys sent to <DateValidFrom> input");
     }
 
     public void uploadImageToFileuploaderOnGeneralTab(){
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#tab-general  input[name='new_images[]'][type='file']")
         );
 
@@ -116,46 +116,46 @@ Helpers helpers = new Helpers();
     }
 
     public void fillOutInformationTabData(){
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div.tabs ul li:nth-child(2) a")
         );
         System.out.println("<Information> tab clicked");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div.tabs select[name=manufacturer_id]")
         );
         System.out.println("<Manufacturer> input clicked");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div.tabs select[name=manufacturer_id] option[value='1']")
         );
         System.out.println("<ACME> selected");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-information input[name='keywords']"),
                 "keyword"
         );
         System.out.println("<keywords> sent");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-information input[name='short_description[en]']"),
                 "Some short desc"
         );
         System.out.println("<Short desc> sent");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-information div.trumbowyg-editor"),
                 "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
         );
         System.out.println("<Desc text> sent");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-information input[name='head_title[en]']"),
                 "somthing bla bla"
         );
         System.out.println("<head_title> sent");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-information input[name='meta_description[en]']"),
                 "something bla bla somthing bla bla somthing bla bla"
         );
@@ -163,28 +163,28 @@ Helpers helpers = new Helpers();
     }
 
     public void fillOutPricesTabData(){
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div.tabs ul li:nth-child(4) a")
         );
         System.out.println("<Prices> tab clicked");
 
-        helpers.findElementAndClearAndSendKeys(
+        this.findElementAndClearAndSendKeys(
                 By.cssSelector("div#tab-prices input[name='purchase_price']"),
                 "3.00"
         );
         System.out.println("<Prices> tab clicked");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#tab-prices select[name=purchase_price_currency_code]")
         );
         System.out.println("<Currency> input clicked");
 
-        helpers.findElementAndClick(
+        this.findElementAndClick(
                 By.cssSelector("div#tab-prices select[name=purchase_price_currency_code] option[value='USD']")
         );
         System.out.println("<USD> option selected");
 
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("div#tab-prices input[name='prices[USD]']"),
                 "10.00"
         );
@@ -192,13 +192,13 @@ Helpers helpers = new Helpers();
     }
 
     public void checkIfProductWasCreated() {
-        helpers.findElementAndSendKeys(
+        this.findElementAndSendKeys(
                 By.cssSelector("input[type=search]"),
                 prod_name
         );
         System.out.println("Keys sent to <Search> input to find newly created product");
 
-        helpers.findElementAndSendKeysPad(
+        this.findElementAndSendKeysPad(
                 By.cssSelector("input[type=search]"),
                 Keys.ENTER
         );

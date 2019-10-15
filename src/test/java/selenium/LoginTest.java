@@ -7,17 +7,17 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class LoginTest extends TestBase {
+public class LoginTest extends Helpers {
 
 
     //  ************************** Task 8 test  **************************
 //  1. Check if all products on home page has badges (sale or new)
 //  2. Check that each product has one badge
-    Helpers helpers = new Helpers();
+
     @Test
     public void testCheckProductBadgesOnHomePage() {
 
-        helpers.initPage("http://localhost/litecart/");
+        this.initPage("http://localhost/litecart/");
 
         List<WebElement> products_sections_list = driver.findElements(
                 By.cssSelector("div.middle>div.content div.box"));
@@ -52,7 +52,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void testLoginAndGoThroughMenu() {
-        helpers.logInToAdmin("admin", "admin");
+        this.logInToAdmin("admin", "admin");
         this.elementsToClick();
     }
     //****************** For older versions **********************
@@ -74,7 +74,7 @@ public class LoginTest extends TestBase {
 
 
     public void elementsToClick() {
-        int number_of_elements_elements = helpers.getNumberOfElements(By.cssSelector("ul#box-apps-menu li"));
+        int number_of_elements_elements = this.getNumberOfElements(By.cssSelector("ul#box-apps-menu li"));
 
         Boolean all_menu_elements_clicked = false;
         int i = 1;
@@ -88,11 +88,11 @@ public class LoginTest extends TestBase {
                 //   System.out.println("Element #" + i + " is " + link);
                    nth_element.click();
                 //   System.out.println("Element #" + i + " " + link + " clicked");
-                helpers.assertElementPresent(
+                this.assertElementPresent(
                         By.cssSelector("td#content h1"),
                         "h1 element is not present on the page" + link,
                         "Page: "+ link + ", title h1 element");
-                int elements_of_nth_elements = helpers.getNumberOfElements(
+                int elements_of_nth_elements = this.getNumberOfElements(
                         By.cssSelector("ul#box-apps-menu li.selected:nth-child(" + i + ") ul:nth-child(2) li"));
 
                 if (elements_of_nth_elements > 0) {
@@ -108,7 +108,7 @@ public class LoginTest extends TestBase {
                             //   System.out.println("SubElement #" + j + " is " + sublink);
                                child_of_nth_element.click();
                             //   System.out.println("SubElement #" + j  + " " +  sublink + " clicked");
-                            helpers.assertElementPresent(
+                            this.assertElementPresent(
                                     By.cssSelector("td#content h1"),
                                     "h1 element is not present on the page" + sublink,
                                     "Page: "+ sublink + ", title h1 element");
