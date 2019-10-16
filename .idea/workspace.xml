@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5898825c-bbc1-4722-b52d-d01e62cb2c70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -47,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="1125">
+              <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,8 +63,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="41" />
+            <state relative-caret-position="324">
+              <caret line="64" column="12" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Helpers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/OpenNewWindowTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,21 +155,22 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/MainPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pageObjects/LoginPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/OpenNewWindowTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="351" />
-    <option name="y" value="-920" />
-    <option name="width" value="1268" />
-    <option name="height" value="920" />
+    <option name="x" value="86" />
+    <option name="y" value="47" />
+    <option name="width" value="1179" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -152,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,6 +220,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -235,22 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CartTest.testAddToCart">
-    <configuration name="AddProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="firstTests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.AddProductTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.OpenNewWindowTest.testCheckLinksOpeningInNewWindows">
     <configuration name="AddProductTest.testLoginAndGoThroughMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstTests.test" />
       <extension name="coverage">
@@ -315,13 +326,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="firstTests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.OpenNewWindowTest" />
+      <option name="METHOD_NAME" value="testCheckLinksOpeningInNewWindows" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OpenNewWindowTest.testCheckLinksOpeningInNewWindows" />
         <item itemvalue="JUnit.CartTest.testAddToCart" />
         <item itemvalue="JUnit.LoginTest.testCheckProductBadgesOnHomePage" />
         <item itemvalue="JUnit.CartTest.testCheckProductBadgesOnHomePage" />
         <item itemvalue="JUnit.AddProductTest.testLoginAndGoThroughMenu" />
-        <item itemvalue="JUnit.AddProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -339,42 +366,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 39m 20s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 08m 55s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 07m 48s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 10m 45s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 07m 53s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 11m 27s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 08m 41s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 13m 09s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 12m 05s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 13m 30s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 12m 18s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 20m 04s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 13m 08s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 21m 38s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 14m 00s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 23m 13s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 19m 46s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 24m 05s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 20m 08s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    <history-entry file="OpenNewWindowTest_testCheckLinksOpeningInNewWindows - 2019.10.16 at 15h 26m 04s.xml">
+      <configuration name="OpenNewWindowTest.testCheckLinksOpeningInNewWindows" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="351" y="-920" width="1268" height="920" extended-state="0" />
+    <frame x="86" y="47" width="1179" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32300162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11873351" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -383,7 +410,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.4263285" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.47050938" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,16 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Helpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/PaginationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -547,10 +564,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CartTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="270">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -559,18 +596,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="41" />
+        <state relative-caret-position="324">
+          <caret line="64" column="12" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CartTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/OpenNewWindowTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        <state relative-caret-position="581">
+          <caret line="41" column="60" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

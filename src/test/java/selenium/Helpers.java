@@ -8,9 +8,15 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 
 public class Helpers extends TestBase{
+    public static int getRandomNumber(int number) {
+        Random rand = new Random();
+        int value = rand.nextInt(number);
+        return  value;
+    }
 
     public void logInToAdmin(String username, String password) {
         this.initPage("http://localhost/litecart/admin/");
