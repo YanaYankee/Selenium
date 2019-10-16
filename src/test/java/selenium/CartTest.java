@@ -9,51 +9,43 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentI
 
 public class CartTest extends Helpers{
     //  ************************** Task 13 test  **************************
-//  Add to cart and remove from cart test
+    //  Add to cart and remove from cart test
+
     @Test
     public void testAddToCart(){
 
-
         this.initPage("http://localhost/litecart/");
 
-        this.findElementAndClick(By.cssSelector("li.product"));
-        this.findElementAndClick(By.cssSelector("button[name='add_cart_product']"));
-        wait.until(textToBePresentInElementLocated(By.cssSelector("div#cart span.quantity"),
-                "1"));
-                System.out.println("First product added to cart");
-
-
-        this.findElementAndClick(By.cssSelector("div#logotype-wrapper"));
-        this.findElementAndClick(By.cssSelector("li.product"));
-        this.findElementAndClick(By.cssSelector("button[name='add_cart_product']"));
-        wait.until(textToBePresentInElementLocated(By.cssSelector("div#cart span.quantity"),
-                "2"));
-                System.out.println("Second product added to cart");
-
-        this.findElementAndClick(By.cssSelector("div#logotype-wrapper"));
-        this.findElementAndClick(By.cssSelector("li.product"));
-        this.findElementAndClick(By.cssSelector("button[name='add_cart_product']"));
-        wait.until(textToBePresentInElementLocated(By.cssSelector("div#cart span.quantity"),
-                "3"));
-                System.out.println("Third product added to cart");
+        int i = 1;
+        int number_of_products_to_add = 3;
+        while (i <= number_of_products_to_add) {
+            if (i < 2) {
+                this.findElementAndClick(By.cssSelector("div#logotype-wrapper"));
+            }
+            this.findElementAndClick(By.cssSelector("li.product"));
+            int size_selector = this.getAmountOfElements(By.cssSelector("select[name='options[Size]']"));
+            if (size_selector > 0) {
+                this.findElementAndClick(By.cssSelector("select[name='options[Size]']"));
+                this.findElementAndClick(By.cssSelector("option[value='Small']"));
+            }
+            this.findElementAndClick(By.cssSelector("button[name='add_cart_product']"));
+            wait.until(textToBePresentInElementLocated(By.cssSelector("div#cart span.quantity"),
+                    String.valueOf(i)));
+                System.out.println("Product #" + i + " added to cart");
+            ++i;
+        }
 
         this.findElementAndClick(By.cssSelector("div#cart a.link"));
 
-        this.findElementAndClick(By.cssSelector("button[name='remove_cart_item']"));
-        wait.until(numberOfElementsToBeLessThan(By.cssSelector("table.dataTable tr"), 8));
-                System.out.println("First product is removed from cart");
-
-        this.findElementAndClick(By.cssSelector("button[name='remove_cart_item']"));
-        wait.until(numberOfElementsToBeLessThan(By.cssSelector("table.dataTable tr"), 7));
-        System.out.println("First product is removed from cart");
-
-        this.findElementAndClick(By.cssSelector("button[name='remove_cart_item']"));
-        wait.until(numberOfElementsToBeLessThan(By.cssSelector("table.dataTable tr"), 6));
-        System.out.println("First product is removed from cart");
-
-
+        while (i > 0) {
+            this.findElementAndClick(By.cssSelector("button[name='remove_cart_item']"));
+            wait.until(numberOfElementsToBeLessThan(By.cssSelector("table.dataTable tr"), 5 + i));
+            --i;
+            if (i >0) {
+                System.out.println("Product is removed from cart, products left " + i);
+            }
+        }
     }
-
 
 
 //  ready method Wait in selenium
@@ -62,8 +54,6 @@ public class CartTest extends Helpers{
 //WebElement element = wait.until(
 //        d->d.findElement(locator)
 //);
-
-
 
 
 //    WebDriverWait wait = new WebDriverWait(driver, 10/*seconds*/);
@@ -109,8 +99,6 @@ public class CartTest extends Helpers{
 //    Thread.sleep(1000);
 //                    }
 //            }
-//
-//
 //    }
 
 

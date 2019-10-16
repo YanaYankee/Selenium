@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5898825c-bbc1-4722-b52d-d01e62cb2c70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -57,8 +50,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="98" column="2" lean-forward="true" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+            <state relative-caret-position="283">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,18 +132,19 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/Helpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/CreateAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/ProductPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/CartTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="66" />
-    <option name="width" value="1249" />
-    <option name="height" value="790" />
+    <option name="x" value="351" />
+    <option name="y" value="-920" />
+    <option name="width" value="1268" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -333,42 +339,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 21h 56m 45s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 21h 59m 42s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 00m 34s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 02m 05s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 02m 56s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 04m 29s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 26m 00s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 27m 31s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 38m 13s.xml">
-      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CartTest_testAddToCart - 2019.10.15 at 22h 39m 20s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 07m 48s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 07m 53s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 08m 41s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 12m 05s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 12m 18s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 13m 08s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 14m 00s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 19m 46s.xml">
+      <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartTest_testAddToCart - 2019.10.16 at 09h 20m 08s.xml">
       <configuration name="CartTest.testAddToCart" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="66" width="1249" height="790" extended-state="0" />
+    <frame x="351" y="-920" width="1268" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32808617" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32300162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -377,7 +383,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.16189112" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49795586" visible="true" weight="0.4263285" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/PaginationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -538,16 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-692">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -558,10 +547,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/AddProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CountriesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/CartTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="2" lean-forward="true" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+        <state relative-caret-position="283">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
